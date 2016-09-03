@@ -80,4 +80,4 @@ Prediction <- predict(fit, test, OOB=TRUE, type = "response")
 
 submit <- data.frame(PassengerId = test$PassengerId, Survived = Prediction)
 
-write.csv(submit, file = "ciforest.csv", row.names = FALSE)
+write.csv(submit, file = "submission.csv", row.names = FALSE)
